@@ -1,0 +1,6 @@
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="sapphire_delta"
+    psk="RebeccaLouLou"
+    key_mgmt=WPA-PSK
+}
