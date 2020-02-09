@@ -12,9 +12,9 @@ Once the image is flashed to the SD card ...
 
 If it has automatically been ejected by Etcher or belenaEtcher, remove the card, and re-insert it. Otherwise, just move to the next step.
 
-If you'd like to setup a headless raspberry pi (one that will only operate w/o a monitor), then execute the script `~/pi/_pi_config/setup.headless.sh`.
+If you'd like to setup a headless raspberry pi (one that will only operate w/o a monitor), then execute the script `~/bin/pi-config/setup.headless.sh`.
 
-If you'd prefer a full version of Rasbian OS and you'd like to utilize a monitor, then execute the script `~/pi/_pi_config/setup-boot.sh`.
+If you'd prefer a full version of Rasbian OS and you'd like to utilize a monitor, then execute the script `~/bin/pi-config/setup-boot.sh`.
 
 ## Step 3
 

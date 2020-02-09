@@ -1,4 +1,5 @@
 #!/bin/bash
+source private_config.sh
 # -------------------------------------------------------
 # Setup Headless Raspberry Pi (with built-in WiFi)
 # -------------------------------------------------------
@@ -10,14 +11,14 @@
 # adge.denkers@gmail.com | https://github.com/adgedenkers
 # -------------------------------------------------------
 # file name: setup.headless.sh
-# location: /Users/adge/pi/_pi_config/
+# location: /Users/$uname/bin/pi-config/
 # date: 2020-02-09
 # -------------------------------------------------------
 
 echo "Setting up a headless Pi"
-
+mkdir "~/bin"
 # setup variables
-mac_root="/Users/adge/pi/_pi_config"
+mac_root="/Users/$uname/bin/pi-config"
 pi_root="/Volumes/boot"
 
 # config file

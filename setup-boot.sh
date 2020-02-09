@@ -1,4 +1,5 @@
 #!/bin/bash
+source private_config.sh
 # -------------------------------------------------------
 # Setup RaspberryPi Wifi and SSH
 # -------------------------------------------------------
@@ -10,7 +11,7 @@
 # adge.denkers@gmail.com | https://github.com/adgedenkers
 # -------------------------------------------------------
 # file name: setup-boot.sh
-# location: /Users/adge/pi/_pi_config/
+# location: /Users/$uname/bin/pi-config/
 # date: 2019-04-04
 # -------------------------------------------------------
 
@@ -20,7 +21,7 @@
 # then re-inserted in the Mac, and then run this script.
 # 
 # With the SD inserted in your Mac/Linux box, execute:
-# $ ~/pi/_pi_config/setup-boot.sh
+# $ ~/bin/pi-config/setup-boot.sh
 #
 # Once script has finished, eject the SD card, and
 # insert it into the Pi, and power on the Pi.
@@ -29,12 +30,16 @@
 # using the command below. 
 # Username: `pi`    Password: `raspberry`
 #
-# $ ssh pi@10.4.1.XYZ 
+# $ ssh pi@192.168.1.XYZ 
 # ##############
 
+mkdir "~/bin"
+
+# NOTE: Make sure you've edited `private_config-template.sh` and saved it as `private_config.sh` before
+# executing this script
 
 # setup variables
-home_root="/Users/adge/pi/_pi_config"
+home_root="/Users/$uname/bin/pi-config"
 pi_root="/Volumes/boot"
 pi_config_file="/Volumes/boot/config.txt"
 
